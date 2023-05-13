@@ -1,0 +1,16 @@
+insert into KUENSTLER values
+(1,'Vince','Gilligan'),
+(2,'Seth','MacFarlane'),
+(3,'George','Kay'),
+(4,'Jessica','Goldberg'),
+(5,'Bryan','Cranston'),
+(6,'Aaron','Paul'),
+(7,'Anna','Gunn'),
+(8,'Seth','MacFarlane'),
+(9,'Adrianne','Palicki'),
+(10,'Penny Johnson','Jerald'),
+(11,'Omar','Sy'),
+(12,'Ludivine','Sagnier'),
+(13,'Hervé','Pierre'),
+(14,'Michelle','Monaghan'),
+(15,'Emma','Greenwell');
