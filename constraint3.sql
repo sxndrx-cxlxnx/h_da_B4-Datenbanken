@@ -1,0 +1,2 @@
+ALTER TABLE episode 
+	ALTER COLUMN imdb_rating SET DEFAULT 8;

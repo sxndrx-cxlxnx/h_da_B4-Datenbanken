@@ -6,7 +6,6 @@ insert into KUENSTLER values
 (5,'Bryan','Cranston'),
 (6,'Aaron','Paul'),
 (7,'Anna','Gunn'),
-(8,'Seth','MacFarlane'),
 (9,'Adrianne','Palicki'),
 (10,'Penny Johnson','Jerald'),
 (11,'Omar','Sy'),
