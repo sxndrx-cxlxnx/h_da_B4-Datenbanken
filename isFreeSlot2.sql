@@ -18,7 +18,7 @@ BEGIN
 		if(row1.sendername LIKE NEW.sendername)
 		then
 
-			if((NEW.startzeit <= row1.endzeit AND NEW.startzeit >= row1.startzeit) OR (NEW.endzeit >= row1.startzeit AND NEW.endzeit <= row1.endzeit))
+			if((NEW.startzeit < row1.endzeit AND NEW.startzeit > row1.startzeit) OR (NEW.endzeit > row1.startzeit AND NEW.endzeit < row1.endzeit))
 			then
 				raise exception 'Ausstrahlung ueberschneidet sich mit anderer Austrahlung';
 				return NULL;
@@ -36,4 +36,3 @@ $$ LANGUAGE plpgsql;
 create OR REPLACE trigger isSlotFreeTrigger before insert on ausgestrahlt
 	for each row execute function isSlotFree();
 
-INSERT INTO ausgestrahlt values (22,'PRO7','Lupin',1,1,'2023-05-01 15:30:00','2023-05-01 16:30:00');
